@@ -1,7 +1,7 @@
 class App < Sinatra::Base
     get "/" do
         @images = Image.all
-        haml :index
+        erb :index
     end
 
     post "/images" do
